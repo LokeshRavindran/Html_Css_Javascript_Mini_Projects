@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.steps {
+  border: 4px solid #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main-container {
+  position: relative;
+}
+.container .main-container #step-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+.container .main-container #step-container #inactive {
+  display: block;
+  position: absolute;
+  background-color: grey;
+  height: 4px;
+  width: 100%;
+}
+.container .main-container #step-container #active {
+  display: block;
+  width: 0px;
+  position: absolute;
+  background-color: blue;
+  height: 4px;
+}
+.container .main-container #step-container .steps:nth-child(1) {
+  border: 4px solid blue;
+}
+.container .main-container #button-container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .main-container #button-container #prev {
+  background-color: grey;
+  cursor: not-allowed;
+}
+.container .main-container #button-container #next {
+  cursor: pointer;
+}
