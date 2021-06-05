@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #333;
+  position: relative;
+}
+body #nav-items {
+  list-style: none;
+  color: white;
+  position: fixed;
+  top: 450px;
+  left: -200px;
+  transition: left 0.5s ease-in;
+}
+body #nav-items li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: left 0.5s ease-in;
+}
+body #nav-items li i {
+  margin: 0rem 0.3rem;
+}
+body #nav-items #home {
+  margin: 2rem 0rem;
+  margin-left: 1rem;
+}
+body #nav-items #about {
+  margin: 2rem 0rem;
+  margin-left: 2rem;
+}
+body #nav-items #contact {
+  margin: 2rem 0rem;
+  margin-left: 3rem;
+}
+body .container {
+  position: relative;
+}
+body .container #nav {
+  background-color: #0080ff;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 100% 100%;
+  transform: rotate(0deg) translateX(-50%) translateY(-50%);
+  transform-origin: 0px 0px;
+  z-index: 1;
+  transition: transform 0.5s ease-in;
+}
+body .container #nav #rotate {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  color: white;
+}
+body .container #nav #back {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8rem;
+  left: 3rem;
+  color: white;
+}
+body .container #front-wrapper {
+  height: 100%;
+  transform-origin: 0px 0px;
+  background-color: #fafafa;
+  transition: transform 0.5s ease-in;
+}
+body .container #front-wrapper #front-contents {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: auto;
+}
+body .container #front-wrapper #front-contents #top-container h5 {
+  line-height: 1;
+}
+body .container #front-wrapper #front-contents #top-container p {
+  margin: 1rem 0rem;
+  text-align: justify;
+}
+body .container #front-wrapper #front-contents #image-container h3 {
+  margin: 1rem 0rem;
+}
+body .container #front-wrapper #front-contents #image-container img {
+  width: 100%;
+}
+body .container #front-wrapper #front-contents #bottom-container p {
+  margin: 1rem 0rem;
+  text-align: justify;
+}
