@@ -31,8 +31,12 @@ body {
       width: 0px;
       transition: width 0.3s ease-in;
     }
-    i {
-      cursor: pointer;
+    button {
+      border: none;
+      background: transparent;
+      i {
+        cursor: pointer;
+      }
     }
   }
 }

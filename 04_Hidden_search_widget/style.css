@@ -31,6 +31,10 @@ body {
   width: 0px;
   transition: width 0.3s ease-in;
 }
-.container #search i {
+.container #search button {
+  border: none;
+  background: transparent;
+}
+.container #search button i {
   cursor: pointer;
 }
