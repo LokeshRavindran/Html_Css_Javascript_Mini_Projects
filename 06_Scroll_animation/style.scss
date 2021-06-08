@@ -1,0 +1,54 @@
+//css reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #efedd6;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  #list-wrap {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #list {
+      list-style: none;
+      .box {
+        height: 200px;
+        width: 400px;
+        margin: 1rem 0rem;
+        border-radius: 10px;
+        background-color: #4682b4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+        // transform: translateX(-200%);
+        transition: transform 0.4s ease;
+
+        &:nth-child(odd) {
+          transform: translateX(200%);
+        }
+        &:nth-child(even) {
+          transform: translateX(-200%);
+        }
+        &.show {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

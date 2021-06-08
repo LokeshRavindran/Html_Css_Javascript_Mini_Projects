@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn {
+  outline: none;
+  background: transparent;
+  padding: 1.5rem 4rem;
+  margin: 1rem 0rem;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  position: absolute;
+}
+
+h1 {
+  margin: 1rem 0rem;
+  font-size: 4rem;
+  position: absolute;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container #ps-container {
+  position: absolute;
+  transition: 1s;
+  background-image: url("./ps.jpeg");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  white-space: nowrap;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.container #ps-container h1 {
+  left: 25%;
+  top: 25%;
+}
+.container #ps-container .btn {
+  left: 34%;
+  top: 40%;
+}
+.container #ps-container .btn:hover {
+  border: 3px solid #6361fd;
+  background-color: #6361fd;
+}
+.container #ps-container:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(99, 97, 253, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.container #xbox-container {
+  position: absolute;
+  transition: 1s;
+  background-image: url("./xbox.jpeg");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  white-space: nowrap;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  overflow: hidden;
+}
+.container #xbox-container h1 {
+  left: 25%;
+  top: 25%;
+}
+.container #xbox-container .btn {
+  left: 35%;
+  top: 40%;
+}
+.container #xbox-container .btn:hover {
+  border: 3px solid #137e11;
+  background-color: #137e11;
+}
+.container #xbox-container:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.6);
+  height: 100%;
+  width: 100%;
+}
