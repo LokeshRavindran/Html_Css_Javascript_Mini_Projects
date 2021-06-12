@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #9f67e0;
+  color: white;
+  border: none;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+body {
+  background-color: #686de0;
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  background-color: white;
+  margin: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  border-radius: 5px;
+}
+body .container h3 {
+  color: #6d6d6d;
+}
+body .container p {
+  margin: 4rem 0rem;
+  font-size: 2rem;
+}
+body .container button {
+  font-size: 1rem;
+  cursor: pointer;
+}
